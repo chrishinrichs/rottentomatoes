@@ -24,7 +24,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
             
             var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
-            println("\(object)")
             self.movies = object["movies"] as [NSDictionary]
             self.tableView.reloadData()
         }
@@ -46,10 +45,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         println("Hello I'm at row \(indexPath.row) and section \(indexPath.section)")
         var cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as MovieCell
-        let movie = movies[indexPath.row]
+        var movie = movies[indexPath.row]
+        var posters = movie["posters"] as NSDictionary
+        var posterUrl = posters["thumbnail"] as String
         cell.titleLabel.text! = movie["title"] as String
         cell.synopsisLabel.text! = movie["synopsis"] as String
-        
+        cell.imageThumbnail.setImageWithURL(NSURL(string: posterUrl))
         return cell
     }
 

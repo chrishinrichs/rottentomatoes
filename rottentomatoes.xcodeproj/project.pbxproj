@@ -14,6 +14,7 @@
 		833A413519C2BF2100F6E044 /* rottentomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A413419C2BF2100F6E044 /* rottentomatoesTests.swift */; };
 		833A413F19C2C0FE00F6E044 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A413E19C2C0FE00F6E044 /* Constants.swift */; };
 		833A414319C2CEB700F6E044 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A414219C2CEB700F6E044 /* MovieCell.swift */; };
+		833F027E19C4C20700B73B50 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F027D19C4C20700B73B50 /* MovieDetailViewController.swift */; };
 		BB0E5A566D814D79B391705C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D957E55D15484BB6A689B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		833A413E19C2C0FE00F6E044 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		833A414219C2CEB700F6E044 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		833F027A19C2D91500B73B50 /* rottentomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rottentomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
+		833F027D19C4C20700B73B50 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				833A413E19C2C0FE00F6E044 /* Constants.swift */,
 				833A414219C2CEB700F6E044 /* MovieCell.swift */,
 				833F027A19C2D91500B73B50 /* rottentomatoes-Bridging-Header.h */,
+				833F027D19C4C20700B73B50 /* MovieDetailViewController.swift */,
 			);
 			path = rottentomatoes;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				833A412419C2BF2100F6E044 /* MoviesViewController.swift in Sources */,
+				833F027E19C4C20700B73B50 /* MovieDetailViewController.swift in Sources */,
 				833A414319C2CEB700F6E044 /* MovieCell.swift in Sources */,
 				833A412219C2BF2100F6E044 /* AppDelegate.swift in Sources */,
 				833A413F19C2C0FE00F6E044 /* Constants.swift in Sources */,

@@ -24,6 +24,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
             
             var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
+            println(object)
             self.movies = object["movies"] as [NSDictionary]
             self.tableView.reloadData()
         }
@@ -52,6 +53,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.synopsisLabel.text! = movie["synopsis"] as String
         cell.imageThumbnail.setImageWithURL(NSURL(string: posterUrl))
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showMovieDetails" {
+            // Pass the movie title to the details page
+            var destination = segue.destinationViewController as MovieDetailViewController
+            var indexPath = self.tableView.indexPathForSelectedRow()
+            destination.movie = self.movies[indexPath!.row]
+            
+        }
     }
 
 

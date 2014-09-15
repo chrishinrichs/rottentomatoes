@@ -15,6 +15,7 @@
 		833A413F19C2C0FE00F6E044 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A413E19C2C0FE00F6E044 /* Constants.swift */; };
 		833A414319C2CEB700F6E044 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A414219C2CEB700F6E044 /* MovieCell.swift */; };
 		833F027E19C4C20700B73B50 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F027D19C4C20700B73B50 /* MovieDetailViewController.swift */; };
+		83EA62F019C6A0A100297E0D /* makefg.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EA62EF19C6A0A100297E0D /* makefg.png */; };
 		BB0E5A566D814D79B391705C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D957E55D15484BB6A689B3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		833A414219C2CEB700F6E044 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		833F027A19C2D91500B73B50 /* rottentomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rottentomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
 		833F027D19C4C20700B73B50 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		83EA62EF19C6A0A100297E0D /* makefg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = makefg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		833A411E19C2BF2100F6E044 /* rottentomatoes */ = {
 			isa = PBXGroup;
 			children = (
+				83EA62EF19C6A0A100297E0D /* makefg.png */,
 				833A412119C2BF2100F6E044 /* AppDelegate.swift */,
 				833A412319C2BF2100F6E044 /* MoviesViewController.swift */,
 				833A412519C2BF2100F6E044 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 			files = (
 				833A412719C2BF2100F6E044 /* Main.storyboard in Resources */,
 				833A412919C2BF2100F6E044 /* Images.xcassets in Resources */,
+				83EA62F019C6A0A100297E0D /* makefg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

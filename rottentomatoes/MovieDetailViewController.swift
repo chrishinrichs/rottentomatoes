@@ -12,6 +12,7 @@ class MovieDetailViewController: UIViewController {
 
     var movie: NSDictionary!
     
+    @IBOutlet weak var detailView: UIScrollView!
     @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var reviewsLabel: UILabel!
@@ -49,7 +50,23 @@ class MovieDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onSwipeUp(sender: AnyObject) {
+        var newPos = CGRect(x: 0, y: 100, width: detailView.frame.width, height: detailView.frame.height)
 
+        UIView.animateWithDuration(0.5, animations: {
+            self.detailView.frame = newPos
+        })
+        
+    }
+
+    @IBAction func onSwipeDown(sender: AnyObject) {
+        var newPos = CGRect(x: 0, y: 375, width: detailView.frame.width, height: detailView.frame.height)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.detailView.frame = newPos
+        })
+    }
+    
     /*
     // MARK: - Navigation
 
